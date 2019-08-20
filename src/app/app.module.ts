@@ -8,6 +8,9 @@ import { RenderHostDirective } from './directives/render-host.directive';
 import { DisplayChildComponent } from './display-child/display-child.component';
 import { ParentComponent } from './parent/parent.component';
 import { SelectChildComponent } from './select-child/select-child.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { SelectChildComponent } from './select-child/select-child.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

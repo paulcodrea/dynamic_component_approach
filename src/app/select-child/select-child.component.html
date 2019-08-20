@@ -7,3 +7,5 @@
 
 <li *ngFor = "let fruit of fruitList; let idx = index" (click)="emitSelection(item, idx)"
 [ngStyle]="{'background-color': idx === selectedIndex ? 'aqua' : 'transparent'}">{{fruit}}</li>
+
+<p-dropdown [options]="dropdownOptions" (onChange)="emitDropdownSelection($event)"></p-dropdown>
